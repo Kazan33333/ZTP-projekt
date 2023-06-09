@@ -3,19 +3,17 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 
-@Document(collection = "orders")
-public class Order {
+@Document(collection = "carts")
+public class Cart {
     @Id
     private String id;
     private List<Book> books;
-    private String orderDate;
 
-    public Order() {
+    public Cart() {
     }
 
-    public Order(List<Book> books, String orderDate) {
+    public Cart(List<Book> books) {
         this.books = books;
-        this.orderDate = orderDate;
     }
 
     public String getId() {
@@ -32,13 +30,5 @@ public class Order {
 
     public void setBooks(List<Book> books) {
         this.books = books;
-    }
-
-    public String getOrderDate() {
-        return orderDate;
-    }
-
-    public void setOrderDate(String orderDate) {
-        this.orderDate = orderDate;
     }
 }

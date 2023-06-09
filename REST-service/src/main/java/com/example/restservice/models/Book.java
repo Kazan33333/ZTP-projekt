@@ -10,5 +10,53 @@ public class Book {
     private String releaseDate;
     private String isbn;
 
-    // konstruktory, gettery i settery
+    public Book() {
+    }
+
+    public Book(String title, String author, String releaseDate, String isbn) {
+        this.title = title;
+        this.author = author;
+        this.releaseDate = releaseDate;
+        this.isbn = isbn;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getReleaseDate() {
+        return releaseDate;
+    }
+
+    public void setReleaseDate(String releaseDate) {
+        this.releaseDate = releaseDate;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
 }
