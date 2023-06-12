@@ -5,7 +5,6 @@ import com.example.ztpbookstore.repositories.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
 
 @RestController
 @RequestMapping("/books")
@@ -30,6 +29,6 @@ public class BookController {
 
     @GetMapping("/year/{year}")
     public Flux<Book> getBooksByYear(@PathVariable int year) {
-        return bookRepository.findByReleaseYear(year);
+        return bookRepository.findByYear(year);
     }
 }
