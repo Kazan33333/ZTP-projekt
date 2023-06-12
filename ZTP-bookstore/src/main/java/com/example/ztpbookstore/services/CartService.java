@@ -1,3 +1,7 @@
+package com.example.ztpbookstore.services;
+
+import com.example.ztpbookstore.models.Book;
+import com.example.ztpbookstore.repositories.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
@@ -26,5 +30,9 @@ public class CartService {
 
     public Flux<Book> getCartItems() {
         return cartItems;
+    }
+
+    public void clearCart() {
+        cartItems = Flux.empty();
     }
 }

@@ -1,3 +1,7 @@
+package com.example.ztpbookstore.services;
+
+import com.example.ztpbookstore.models.Order;
+import com.example.ztpbookstore.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
@@ -7,6 +11,7 @@ import reactor.core.publisher.Mono;
 public class OrderService {
     @Autowired
     private CartService cartService;
+
     @Autowired
     private OrderRepository orderRepository;
 
@@ -19,7 +24,7 @@ public class OrderService {
                     } else {
                         Order order = new Order();
                         order.setBooks(cartItems);
-                        order.setOrderDate("2023-06-09"); // Aktualna data
+                        order.setOrderDate("2023-06-13"); // Actual date
                         return orderRepository.save(order)
                                 .flatMap(savedOrder -> {
                                     cartService.clearCart();

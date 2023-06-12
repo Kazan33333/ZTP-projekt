@@ -1,7 +1,8 @@
-package com.example.restservice.service;
+package com.example.ztpbookstore.services;
 
-import com.example.restservice.model.Book;
-import com.example.restservice.repository.BookRepository;
+import com.example.ztpbookstore.models.Book;
+import com.example.ztpbookstore.models.Order;
+import com.example.ztpbookstore.repositories.BookRepository;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -23,7 +24,7 @@ public class BookService {
         return bookRepository.findByAuthor(author);
     }
 
-    public Mono<Book> getBookByTitle(String title) {
+    public Flux<Book> getBooksByTitle(String title) {
         return bookRepository.findByTitle(title);
     }
 
@@ -34,25 +35,37 @@ public class BookService {
     public Mono<String> addToCart(String bookId) {
         // Implementation for adding a book to the cart
         // You can use a separate CartService or include the cart functionality within the BookService
+        // Replace the return statement with the actual implementation
+        return Mono.just("Book added to cart successfully");
     }
 
     public Mono<String> removeFromCart(String bookId) {
         // Implementation for removing a book from the cart
+        // Replace the return statement with the actual implementation
+        return Mono.just("Book removed from cart successfully");
     }
 
     public Flux<Book> getCartItems() {
         // Implementation for retrieving the cart items
+        // Replace the return statement with the actual implementation
+        return Flux.empty();
     }
 
     public Mono<String> placeOrder() {
         // Implementation for placing an order with the books from the cart
+        // Replace the return statement with the actual implementation
+        return Mono.just("Order placed successfully");
     }
 
     public Mono<Order> getOrderById(String orderId) {
         // Implementation for retrieving a specific order
+        // Replace the return statement with the actual implementation
+        return Mono.empty();
     }
 
     public Flux<Order> getAllOrders() {
         // Implementation for retrieving all orders
+        // Replace the return statement with the actual implementation
+        return Flux.empty();
     }
 }
