@@ -99,7 +99,36 @@ public class BookstoreApplication {
                                 "Dan Brown",
                                 LocalDate.parse("2003-03-18"),
                                 9780307474278L
+                        ),
+                        new BookEntity(
+                                null,
+                                "To Kill a Mockingbird",
+                                "Harper Lee",
+                                LocalDate.parse("1960-07-11"),
+                                9780061120084L
+                        ),
+                        new BookEntity(
+                                null,
+                                "1984",
+                                "George Orwell",
+                                LocalDate.parse("1949-06-08"),
+                                9780451524935L
+                        ),
+                        new BookEntity(
+                                null,
+                                "Pride and Prejudice",
+                                "Jane Austen",
+                                LocalDate.parse("1813-01-28"),
+                                9780141439518L
+                        ),
+                        new BookEntity(
+                                null,
+                                "The Great Gatsby",
+                                "F. Scott Fitzgerald",
+                                LocalDate.parse("1925-04-10"),
+                                9780743273565L
                         )
+
                 )
                 .flatMap(e -> bookEntityRepository.save(e))
                 .subscribe();
