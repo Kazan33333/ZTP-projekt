@@ -51,7 +51,7 @@ public class SecurityConfig {
                 .cors().and()
                 .authorizeExchange((exchange) -> exchange
                         .pathMatchers("/order/**").hasRole("USER")
-                        .pathMatchers("/cart/**").hasRole("USER")
+                        //.pathMatchers("/cart/**").hasRole("USER")
                         .anyExchange().permitAll()
                 )
                 .httpBasic(Customizer.withDefaults());
