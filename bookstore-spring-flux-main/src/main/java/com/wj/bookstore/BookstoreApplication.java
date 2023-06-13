@@ -127,14 +127,14 @@ public class BookstoreApplication {
                                 "F. Scott Fitzgerald",
                                 LocalDate.parse("1925-04-10"),
                                 9780743273565L
-                        ), 
+                        ),
                         new BookEntity(
                                 null,
                                 "Hercule Poirot",
                                 "Agatha Christie",
                                 LocalDate.parse("1997-04-12"),
                                 9780307474211L
-                        ), 
+                        ),
                         new BookEntity(
                                 null,
                                 "Moby-Dick",
@@ -169,7 +169,7 @@ public class BookstoreApplication {
                                 "Charlotte Brontë",
                                 LocalDate.parse("1847-10-16"),
                                 9780141441146L
-                        ), 
+                        ),
                         new BookEntity(
                                 null,
                                 "War and Peace",
@@ -179,18 +179,11 @@ public class BookstoreApplication {
                         ),
                         new BookEntity(
                                 null,
-                                "The Odyssey",
-                                "Homer",
-                                LocalDate.parse("800 BCE"),
-                                9780143039952L
-                        ),
-                        new BookEntity(
-                                null,
                                 "One Hundred Years of Solitude",
                                 "Gabriel García Márquez",
                                 LocalDate.parse("1967-05-30"),
                                 9780060883287L
-                        ), 
+                        ),
                         new BookEntity(
                                 null,
                                 "Crime and Punishment",
@@ -204,7 +197,7 @@ public class BookstoreApplication {
                                 "Fyodor Dostoevsky",
                                 LocalDate.parse("1880-11-26"),
                                 9780374528379L
-                        ), 
+                        ),
                         new BookEntity(
                                 null,
                                 "Wuthering Heights",
@@ -232,7 +225,7 @@ public class BookstoreApplication {
                                 "Mary Shelley",
                                 LocalDate.parse("1818-01-01"),
                                 9780141439471L
-                        ), 
+                        ),
                         new BookEntity(
                                 null,
                                 "The Scarlet Letter",
@@ -253,14 +246,14 @@ public class BookstoreApplication {
                                 "Victor Hugo",
                                 LocalDate.parse("1862-04-03"),
                                 9780140449082L
-                        ), 
+                        ),
                         new BookEntity(
                                 null,
                                 "Anna Karenina",
                                 "Leo Tolstoy",
                                 LocalDate.parse("1877-01-01"),
                                 9780143035008L
-                        ), 
+                        ),
                         new BookEntity(
                                 null,
                                 "Don Quixote",
@@ -274,21 +267,21 @@ public class BookstoreApplication {
                                 "John Steinbeck",
                                 LocalDate.parse("1939-04-14"),
                                 9780143039433L
-                        ), 
+                        ),
                         new BookEntity(
                                 null,
                                 "The Old Man and the Sea",
                                 "Ernest Hemingway",
                                 LocalDate.parse("1952-09-01"),
                                 9780684801223L
-                        ), 
+                        ),
                         new BookEntity(
                                 null,
                                 "The Canterbury Tales",
                                 "Geoffrey Chaucer",
                                 LocalDate.parse("1478-01-01"),
                                 9780140424386L
-                        ), 
+                        ),
                         new BookEntity(
                                 null,
                                 "The Sun Also Rises",
