@@ -24,14 +24,20 @@ public class SecurityConfig {
     @Bean
     public MapReactiveUserDetailsService userDetailService(){
         UserDetails user1 = User.builder()
-                .username("Joe Snow")
-                .password(encoder().encode("joejoe123"))
+                .username("Piotr Gorczowski")
+                .password(encoder().encode("1234"))
                 .roles("USER")
                 .build();
 
         UserDetails user2 = User.builder()
-                .username("Jan Kowalski")
-                .password(encoder().encode("jank123"))
+                .username("Krzysztof Kazanowski")
+                .password(encoder().encode("1234"))
+                .roles("USER")
+                .build();
+
+        UserDetails user3 = User.builder()
+                .username("Milena Gil")
+                .password(encoder().encode("1234"))
                 .roles("USER")
                 .build();
 
