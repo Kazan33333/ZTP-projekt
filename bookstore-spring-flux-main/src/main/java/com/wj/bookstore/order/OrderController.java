@@ -18,11 +18,6 @@ public class OrderController {
         this.orderService = orderService;
     }
 
-    @GetMapping("/orders/{orderId}")
-    public Mono<ResponseEntity<Order>> getOrderByID(@PathVariable String orderId, Authentication authentication){
-        return orderService.getOrderById(orderId, authentication);
-    }
-
     @GetMapping("/orders")
     public ResponseEntity<Flux<Order>> getAllOrders(Authentication authentication){
         return orderService.getAllOrders(authentication);
@@ -31,5 +26,10 @@ public class OrderController {
     @PostMapping("/orders")
     public Mono<ResponseEntity<String>> placeAnOrder(Authentication authentication){
         return orderService.placeOrder(authentication);
+    }
+
+    @GetMapping("/orders/{orderId}")
+    public Mono<ResponseEntity<Order>> getOrderByID(@PathVariable String orderId, Authentication authentication){
+        return orderService.getOrderById(orderId, authentication);
     }
 }
